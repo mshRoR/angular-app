@@ -8,14 +8,10 @@ angular.module('plunker', [
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'home/home.html',
-        controller: 'HomeController',
-        controllerAs: 'vm'
+        template: '<home></home>'
       })
       .state('about', {
         url: '/about',
-        templateUrl: 'about/about.html',
-        controller: 'AboutController',
-        controllerAs: 'vm'
+        template: '<about></about>'
       });
   });

@@ -1,5 +1,13 @@
 angular.module('plunker')
-  .controller('AboutController', AboutController);
+  .directive('about', function(){
+    return {
+      restrict: 'E',
+      scope: {},
+      templateUrl: 'about/about.html',
+      controller: AboutController,
+      controllerAs: 'vm'
+    }
+  });
 
   function AboutController(){
     var vm = this;
