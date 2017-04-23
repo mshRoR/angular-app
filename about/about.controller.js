@@ -1,12 +1,19 @@
 angular.module('plunker')
-  .directive('about', function(){
-    return {
-      restrict: 'E',
-      scope: {},
-      templateUrl: 'about/about.html',
-      controller: AboutController,
-      controllerAs: 'vm'
-    }
+  // .controller('AboutController', AboutController);
+  // .directive('about', function(){
+  //   return {
+  //     restrict: 'E',
+  //     scope: {},
+  //     templateUrl: 'about/about.html',
+  //     controller: AboutController,
+  //     controllerAs: 'vm'
+  //   }
+  // });
+  .component('about', {
+    restrict: 'E',
+    scope: {},
+    templateUrl: 'about/about.html',
+    controller: AboutController
   });
 
   function AboutController(){
