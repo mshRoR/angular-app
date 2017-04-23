@@ -11,7 +11,7 @@ angular.module('plunker')
   // });
   .component('home', {
     restrict: 'E',
-    scope: {},
+    // scope: {},
     templateUrl: 'home/home.html',
     controller: HomeController
   });
